@@ -7,13 +7,16 @@
 
 <h1>Bienvenido a mi aplicación</h1>
 
+<input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
 <button onclick="saludar()">
     Saludar
 </button>
 
 <script>
 function saludar() {
-    alert("Hola mundo");
+    let nombre = document.getElementById("nombre").value;
+    alert("Hola " + nombre);
 }
 </script>
 
